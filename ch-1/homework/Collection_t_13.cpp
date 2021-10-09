@@ -46,7 +46,6 @@ class Collection
 
         void insert(Object new_item, unsigned int idx=0)
         {
-
             typename vector<Object>::iterator it;
             it = elements.begin() + idx;
             elements.insert(it, new_item);
@@ -61,9 +60,7 @@ class Collection
                 length -= 1;
                 elements.erase(elements.begin() + existing_index);
                 existing_index = find_index_of(item_to_remove);
-
             }
-
         }
 
         const bool isEmpty()
